@@ -1,0 +1,28 @@
+{% extends "nav.html" %}
+{% block content %}
+<form action="/recommendations" method="POST">
+    <section class="banner landing__container" id="home" style="background-image: url('static/13530.jpg');">
+        <div class="textbx ">
+            <h2>Try Our second model Reccomendations 
+                
+                <input  name="movie2" type="text" placeholder="Enter a Movie You Like" style="width:500px;height:50px;font-size:0.4em;border: 5px solid rgb(247, 30, 30);border-radius: 15px;">
+
+                <button type="submit" class="find" style="width: 170px;height:50px;font-size: 30px;background-color: rgb(255, 0, 0);border-radius:30px">
+                    <a  style=" text-decoration: dashed;"  onclick="toggleMenu()">Find Movie</a>
+                </button> </h2>
+
+
+          
+            
+        </div>
+        <div class="imgo">
+<div class="one"><img  src="static/icon1.png"></div>
+<div class="two"><img  src="static/icon2.png"></div>
+<div class="three"><img  src="static/icon3.png"></div>
+<div class="four"><img   src="static/icon4.png"></div>
+
+</div>
+<p>{{ p }}</p>
+    </section>
+</form>  
+{% endblock content %}
